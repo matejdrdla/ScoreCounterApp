@@ -10,140 +10,102 @@
 
         <Button
             android:id="@+id/btn_reset"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:text="@string/reset"
+            style="@style/BigBtnStyle"
             android:layout_marginBottom="10px"
             android:layout_marginLeft="10px"
             android:layout_marginRight="10px"
-            android:layout_marginTop="15px"
-            android:background="@android:color/darker_gray"
-            android:text="@string/reset"
-            android:textColor="@android:color/white" />
+            android:layout_marginTop="15px" />
 
-        <Button
-            android:id="@+id/btn_send"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_margin="10px"
-            android:background="@android:color/darker_gray"
-            android:text="@string/send"
-            android:textColor="@android:color/white" />
+    <Button
+        android:id="@+id/btn_send"
+        android:text="@string/send"
+        style="@style/BigBtnStyle"
+        android:layout_margin="10px" />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
 
         <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10px"
-                android:layout_weight="1"
-                android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_team_a_name"
+                android:text="@string/team_a"
+                style="@style/TxtViewStyle"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
 
-                <TextView
-                    android:id="@+id/text_team_a_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/team_a"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/black"
-                    android:textSize="30sp" />
+            <TextView
+                android:id="@+id/text_team_a_score"
+                android:text="0"
+                style="@style/TxtViewStyle"
+                android:padding="25dp"
+                android:textColor="@android:color/holo_blue_light"
+                android:textSize="50sp" />
 
-                <TextView
-                    android:id="@+id/text_team_a_score"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:padding="25dp"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/holo_blue_light"
-                    android:textSize="75sp" />
+            <Button
+                android:id="@+id/btn_team_a_plus_three"
+                android:text="+ 3"
+                style="@style/SmallBtnStyle" />
 
-                <Button
-                    android:id="@+id/btn_team_a_plus_three"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@android:color/darker_gray"
-                    android:text="+ 3"
-                    android:textColor="@android:color/white" />
+            <Button
+                android:id="@+id/btn_team_a_plus_two"
+                android:text="+ 2"
+                style="@style/SmallBtnStyle" />
 
-                <Button
-                    android:id="@+id/btn_team_a_plus_two"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@android:color/darker_gray"
-                    android:text="+ 2"
-                    android:textColor="@android:color/white" />
+            <Button
+                android:id="@+id/btn_team_a_plus_one"
+                android:text="+ 1"
+                style="@style/SmallBtnStyle"
+                android:background="@android:color/holo_blue_light" />
 
-                <Button
-                    android:id="@+id/btn_team_a_plus_one"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@android:color/holo_blue_light"
-                    android:text="+ 1"
-                    android:textColor="@android:color/white" />
+        </LinearLayout>
 
-            </LinearLayout>
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="10px"
+            android:layout_weight="1"
+            android:orientation="vertical">
 
-            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_margin="10px"
-                android:layout_weight="1"
-                android:orientation="vertical">
+            <TextView
+                android:id="@+id/text_team_b_name"
+                android:text="@string/team_b"
+                style="@style/TxtViewStyle"
+                android:textColor="@android:color/black"
+                android:textSize="30sp" />
 
-                <TextView
-                    android:id="@+id/text_team_b_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:text="@string/team_b"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/black"
-                    android:textSize="30sp" />
+            <TextView
+                android:id="@+id/text_team_b_score"
+                android:text="0"
+                style="@style/TxtViewStyle"
+                android:padding="25dp"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="50sp" />
 
-                <TextView
-                    android:id="@+id/text_team_b_score"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginBottom="10dp"
-                    android:padding="25dp"
-                    android:text="0"
-                    android:textAlignment="center"
-                    android:textColor="@android:color/holo_red_dark"
-                    android:textSize="75sp" />
+            <Button
+                android:id="@+id/btn_team_b_plus_three"
+                android:text="+ 3"
+                style="@style/SmallBtnStyle" />
 
-                <Button
-                    android:id="@+id/btn_team_b_plus_three"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@android:color/darker_gray"
-                    android:text="+ 3"
-                    android:textColor="@android:color/white" />
+            <Button
+                android:id="@+id/btn_team_b_plus_two"
+                android:text="+ 2"
+                style="@style/SmallBtnStyle" />
 
-                <Button
-                    android:id="@+id/btn_team_b_plus_two"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:layout_marginBottom="10dp"
-                    android:background="@android:color/darker_gray"
-                    android:text="+ 2"
-                    android:textColor="@android:color/white" />
-
-                <Button
-                    android:id="@+id/btn_team_b_plus_one"
-                    android:layout_width="match_parent"
-                    android:layout_height="50dp"
-                    android:background="@android:color/holo_red_dark"
-                    android:text="+ 1"
-                    android:textColor="@android:color/white" />
-            </LinearLayout>
+            <Button
+                android:id="@+id/btn_team_b_plus_one"
+                android:text="+ 1"
+                style="@style/SmallBtnStyle"
+                android:background="@android:color/holo_red_dark" />
         </LinearLayout>
     </LinearLayout>
+</LinearLayout>
 </ScrollView>

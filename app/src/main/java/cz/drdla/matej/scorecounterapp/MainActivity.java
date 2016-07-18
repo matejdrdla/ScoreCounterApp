@@ -126,7 +126,7 @@ public class MainActivity extends AppCompatActivity {
         btnSend.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String msg = hello + ",\n" + body + " " + counterA + ":" + counterB + ".\n" + greeting + "!\nMatej";
+                String msg = hello + ",\n" + body + " " + counterA + ":" + counterB + ".\n" + greeting + "!";
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
                 intent.setData(Uri.parse("mailto:")); // only email apps should handle this
                 intent.putExtra(Intent.EXTRA_SUBJECT, counterA + ":" + counterB);
