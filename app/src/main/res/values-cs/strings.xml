@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Počítadlo skóré</string>
+    <string name="reset">Vynulovat</string>
+    <string name="send">Poslat emailem</string>
+    <string name="team_a">Tým A</string>
+    <string name="team_b">Tým B</string>
+    <!-- msg -->
+    <string name="hello">Dobrý den</string>
+    <string name="body">Skóré Vaší hry bylo </string>
+    <string name="greeting">Hezký den</string>
+</resources>

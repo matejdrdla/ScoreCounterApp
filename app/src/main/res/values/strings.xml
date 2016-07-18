@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Score Counter</string>
+    <string name="reset">Reset</string>
+    <string name="send">Send via email</string>
+    <string name="team_a">Team A</string>
+    <string name="team_b">Team B</string>
+    <!-- msg -->
+    <string name="hello">Hello</string>
+    <string name="body">Score of the game was </string>
+    <string name="greeting">Have a nice day</string>
+</resources>
